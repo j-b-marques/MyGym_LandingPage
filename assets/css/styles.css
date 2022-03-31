@@ -1,0 +1,295 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+/*=============== RESET STYLES ===============*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+/* For medium devices */
+/* For large devices */
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Z index ==========*/
+/*=============== GENERAL STYLES===============*/
+body {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 0.938rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.blog-post {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.flow > * + * {
+  margin-bottom: 1rem;
+}
+
+.padding-24 {
+  padding: 1.5rem;
+}
+
+.padding-48 {
+  padding: 3rem;
+}
+
+.br-1 {
+  border-radius: 0.5rem;
+}
+
+.br-2 {
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1em 2em;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+}
+.btn:hover, .btn:focus {
+  opacity: 0.9;
+}
+
+.intrinsic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+/******ALL FILES TO IMPORT*****/
+/**Develop Styles*/
+body {
+  background-color: #000000;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header__ct {
+  padding: 20px 25px;
+}
+.header__ct > *,
+.header__ct a {
+  color: #ffffff;
+}
+.header__ct nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+.header__ct nav :first-child {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header__ct nav :first-child:hover {
+  color: #a3333d;
+}
+.header__ct .header__lead {
+  margin-bottom: 120px;
+}
+.header__ct .header__lead h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.header__ct .header__lead .logos__lead {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+.header__ct .header__lead .logos__lead a:hover {
+  color: #a3333d;
+}
+.header__ct .header__bottom h2 {
+  text-transform: uppercase;
+  color: #a3333d;
+  margin-bottom: 2px;
+}
+.header__ct .header__bottom a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header__ct .header__bottom a i {
+  color: #a3333d;
+}
+.header__ct .header__bottom a span {
+  font-size: 0.938rem;
+}
+.header__ct .header__bottom button {
+  background-color: #a3333d;
+  color: #000000;
+  border: none;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 8px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.header__ct .header__bottom button:hover {
+  background-color: #983e46;
+}
+
+/****** MOBILE NAVIGATION *****/
+.nav__menu__mobile {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  height: 100%;
+  width: 20ch;
+  transition: all 0.5s ease-in-out;
+}
+.nav__menu__mobile i {
+  color: #a3333d;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.nav__menu__mobile i:hover {
+  cursor: pointer;
+}
+.nav__menu__mobile .nav__links__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 20px 0;
+}
+.nav__menu__mobile .nav__links__wrapper a {
+  color: #a3333d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap');
+/*=============== VARIABLES CSS ===============*/
+
+/*========== Colors ==========*/
+$body-color: #000000;
+$brand-color: #ffffff;
+$action-color: #a3333d;
+
+/*========== Font and typography ==========*/
+$fam-font: 'Frank Ruhl Libre', serif;
+$fs-big: 1.5rem;
+$fs-normal: 0.938rem;
+$fs-small: 0.813rem;
+
+//Weight
+$fw-light: 300;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-bolder: 900;
+
+// Responsive typography
+@media screen and (min-width: 968px) {
+  $fs-big: 2rem;
+  $fs-normal: 1rem;
+  $fs-small: 0.875rem;
+}
+
+/*========== Z index ==========*/
+$z-1: 100;
+$z-2: 10;
+$z-3: 1;

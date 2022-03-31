@@ -1,0 +1,131 @@
+@use 'config' as *;
+
+/**Develop Styles*/
+
+body {
+  background-color: $body-color;
+  font-family: $fam-font;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header__ct {
+  padding: 20px 25px;
+
+  & > *,
+  a {
+    color: $brand-color;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+    :first-child {
+      text-transform: uppercase;
+      font-size: $fs-big;
+      font-weight: $fw-bold;
+
+      &:hover {
+        color: $action-color;
+      }
+    }
+  }
+
+  .header__lead {
+    margin-bottom: 120px;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: $fw-bolder;
+      margin-bottom: 10px;
+    }
+    .logos__lead {
+      display: flex;
+      gap: 10px;
+      font-size: $fs-big;
+
+      a:hover {
+        color: $action-color;
+      }
+    }
+  }
+
+  .header__bottom {
+    h2 {
+      text-transform: uppercase;
+      color: $action-color;
+      margin-bottom: 2px;
+    }
+    a {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      i {
+        color: $action-color;
+      }
+      span {
+        font-size: $fs-normal;
+      }
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: $action-color;
+      color: $body-color;
+      border: none;
+      font-size: $fs-normal;
+      text-transform: uppercase;
+      font-weight: $fw-bolder;
+      padding: 8px 16px;
+      border-radius: 14px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: hsl(355, 42%, 42%);
+      }
+    }
+  }
+}
+/****** MOBILE NAVIGATION *****/
+.nav__menu__mobile {
+  background-color: $brand-color;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  height: 100%;
+  width: 20ch;
+  transition: all .5s ease-in-out;
+
+  i {
+    color: $action-color;
+    font-size: $fs-big;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    padding-top: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav__links__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 20px 0;
+
+    a {
+      color: $action-color;
+      font-size: $fs-big;
+      font-weight: $fw-bold;
+    }
+  }
+}
