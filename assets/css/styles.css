@@ -104,6 +104,10 @@ select {
 }
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  header {
+    height: 60vh !important;
+  }
+
   nav {
     display: flex;
     align-items: center;
