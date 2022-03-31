@@ -64,7 +64,7 @@ ScrollReveal().reveal('video', {
   rotate: {
     y: 180,
   },
-  duration: 2200,
+  duration: 1200,
 });
 
 //*****/
