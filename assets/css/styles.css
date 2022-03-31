@@ -115,6 +115,7 @@ h2 {
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 20px 25px;
 }
 
 .section {
@@ -172,17 +173,10 @@ h2 {
   opacity: 0.9;
 }
 
-.intrinsic-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1rem;
-}
-
-/******ALL FILES TO IMPORT*****/
-/**Develop Styles*/
-body {
-  background-color: #000000;
-  font-family: "Frank Ruhl Libre", serif;
+  gap: 1.5rem;
 }
 
 header {
@@ -249,16 +243,12 @@ header {
 .header__ct .header__bottom button {
   background-color: #a3333d;
   color: #000000;
+  border-radius: 22px;
   border: none;
   font-size: 0.938rem;
   text-transform: uppercase;
   font-weight: 900;
-  padding: 8px 16px;
-  border-radius: 14px;
   cursor: pointer;
-}
-.header__ct .header__bottom button:hover {
-  background-color: #983e46;
 }
 
 /****** MOBILE NAVIGATION *****/
@@ -278,8 +268,6 @@ header {
   right: 0;
   padding-right: 20px;
   padding-top: 20px;
-}
-.nav__menu__mobile i:hover {
   cursor: pointer;
 }
 .nav__menu__mobile .nav__links__wrapper {
@@ -292,4 +280,110 @@ header {
   color: #a3333d;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/******ALL FILES TO IMPORT*****/
+/**Develop Styles*/
+body {
+  background-color: #000000;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.join__us__ct {
+  display: flex;
+  flex-direction: column;
+}
+.join__us__ct > * {
+  color: #ffffff;
+}
+.join__us__ct h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.join__us__ct span {
+  font-size: 0.813rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.join__us__ct button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 0.938rem;
+  color: #000000;
+  background-color: #a3333d;
+  border-radius: 22px;
+}
+
+.opinions__ct video {
+  border-radius: 10px;
+}
+
+.modalidades__ct {
+  display: flex;
+  flex-direction: column;
+}
+.modalidades__ct > * {
+  color: #ffffff;
+}
+.modalidades__ct h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.modalidades__ct span {
+  font-size: 0.938rem;
+  margin-bottom: 10px;
+}
+.modalidades__ct button {
+  background-color: #a3333d;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 22px;
+  margin-bottom: 80px;
+}
+.modalidades__ct .form__wrapper {
+  margin: 0 auto;
+}
+.modalidades__ct .form__wrapper p > * {
+  font-size: 0.938rem;
+  color: #ffffff;
+}
+.modalidades__ct .form__wrapper p {
+  margin-bottom: 20px;
+}
+.modalidades__ct .form__wrapper form .input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.modalidades__ct .form__wrapper form .input__wrapper :nth-child(1),
+.modalidades__ct .form__wrapper form .input__wrapper :nth-child(2) {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 0;
+  color: #000000;
+}
+.modalidades__ct .form__wrapper form .input__wrapper :nth-child(1):focus,
+.modalidades__ct .form__wrapper form .input__wrapper :nth-child(2):focus {
+  outline: 1.5px solid #a3333d;
+}
+.modalidades__ct .form__wrapper form .input__wrapper textarea {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #a3333d !important;
+}
+.modalidades__ct .form__wrapper form .input__wrapper textarea:focus {
+  outline: 1.5px solid #a3333d !important;
 }/*# sourceMappingURL=styles.css.map */

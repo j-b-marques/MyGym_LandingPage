@@ -11,5 +11,5 @@ const closeMenu = document.querySelector('.close__menu');
 const closenavMobile = document.querySelector('.nav__menu__mobile');
 
 closeMenu.addEventListener('click', () => {
-  closenavMobile.style.right = '-50%';
+  closenavMobile.style.right = '-150vw';
 });
