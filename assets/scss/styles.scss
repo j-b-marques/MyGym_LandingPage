@@ -67,12 +67,10 @@ body {
     font-weight: $fw-bold;
     width: fit-content;
     border-radius: 22px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   .form__wrapper {
-    margin: 0 auto;
-
     p > * {
       font-size: $fs-normal;
       color: $brand-color;
@@ -100,20 +98,76 @@ body {
             outline: 1.5px solid $action-color;
           }
         }
-
-        textarea{
-          display: block;
-          border-radius: 5px;
-          width: 100%;
-          border: 1px solid $action-color !important;
-
-          &:focus {
-            outline: 1.5px solid $action-color !important;
-          }
+      }
+      textarea {
+        border-radius: 5px;
+        width: 100%;
+        min-height: 100px;
+        border: none;
+        outline: 1px solid $action-color !important;
+        margin-bottom: 15px;
+        &:focus {
+          outline: 1px solid $action-color !important;
         }
+      }
+      button {
+        display: block;
+        margin: 0 auto;
       }
     }
   }
 }
 
 //***********
+
+footer {
+  padding-top: 10px !important;
+  background-color: $action-color;
+
+  & > *,
+  a {
+    color: $brand-color;
+  }
+  .footer__wrapper {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+    .grid_item {
+      width: 100%;
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: $fs-normal;
+        font-weight: $fw-bold;
+      }
+      a{
+        font-size: $fs-small;
+      }
+      a:hover {
+        color: $body-color;
+      }
+    }
+
+    .brand__logo {
+      h2 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-weight: $fw-bolder;
+        margin-bottom: 5px;
+      }
+      .socials {
+        display: flex;
+        gap: 15px;
+        i {
+          font-size: 1.2rem;
+          cursor: pointer;
+          &:hover {
+            color: $body-color;
+          }
+        }
+      }
+    }
+  }
+}

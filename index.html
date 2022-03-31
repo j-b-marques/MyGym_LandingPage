@@ -21,7 +21,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="container header__ct">
             <nav>
                 <a href="#">Mygym</a>
@@ -40,7 +40,7 @@
                 <h2>Mygym Lisbon</h2>
                 <a href="#">
                     <i class="fa-solid fa-location-pin"></i>
-                    <span>Av.Almirante Reis,3</span>
+                    <span>Av. Almirante Reis, 3</span>
                 </a>
                 <button class="btn">start now</button>
             </div>
@@ -87,7 +87,7 @@
                 <i class="fa-regular fa-comments"></i>
                 <span>What are clients say:</span>
             </div>
-            <div class="video__wrapper grid">
+  <!--           <div class="video__wrapper grid">
                 <div class="video video__1"><video controls="controls" width="100%" height="auto"
                         src="assets/img/videos/vid1.mp4">
                         <p>Your browser doesn't support embedded videos</p>
@@ -100,7 +100,7 @@
                         src="assets/img/videos/vid3.mp4">
                         <p>Your browser doesn't support embedded videos</p>
                     </video></div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -120,14 +120,46 @@
                         <input type="text" name="name" placeholder="Name">
                         <input type="email" name="email" placeholder="Email" id="">
                     </div>
-                    <textarea placeholder="Your message" name="" id="" cols="40" rows="5"></textarea>
-                    <button class="btn" type="submit">Send</button>
+                    <textarea placeholder="Your message" name="" id=""></textarea>
+                    <button class="btn submit__btn" type="submit">Send</button>
                 </form>
             </div>
-
         </div>
     </section>
 
+    <footer class="section" id="footer">
+        <div class="container footer__ct">
+            <div class="footer__wrapper grid">
+                <div class="grid_item work__with__us">
+                    <h2>Work</h2>
+                    <a href="#">Work with us</a>
+                </div>
+                <div class="grid_item about__us">
+                    <h2>About us</h2>
+                    <a href="#">Get to know us</a>
+                    <a href="#">FAQ's</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="grid_item politics">
+                    <h2>Politics</h2>
+                    <a href="#">Cookie policy</a>
+                    <a href="#">General conditions</a>
+                    <a href="#">Legal warning</a>
+                </div>
+                <div class="grid_item brand__logo">
+                    <a href="#header">
+                        <h2>Mygym</h2>
+                    </a>
+                    <div class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>

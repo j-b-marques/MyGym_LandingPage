@@ -112,6 +112,9 @@ header {
       color: $action-color;
       font-size: $fs-big;
       font-weight: $fw-bold;
+      &:hover{
+        text-decoration: underline 2px solid $body-color;
+      }
     }
   }
 }

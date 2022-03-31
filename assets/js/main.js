@@ -13,3 +13,11 @@ const closenavMobile = document.querySelector('.nav__menu__mobile');
 closeMenu.addEventListener('click', () => {
   closenavMobile.style.right = '-150vw';
 });
+
+//*Default behaviour from submit button
+
+const submitBtn = document.querySelector('.submit__btn');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault(); //* for demo purposes
+});
