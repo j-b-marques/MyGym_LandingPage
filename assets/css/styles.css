@@ -77,6 +77,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Z index ==========*/
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -86,11 +90,115 @@ select {
   }
 }
 /* For medium devices */
+@media screen and (min-width: 767px) {
+  form .input__wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid__ft {
+    display: flex !important;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
 /* For large devices */
-/*=============== VARIABLES CSS ===============*/
-/*========== Colors ==========*/
-/*========== Font and typography ==========*/
-/*========== Z index ==========*/
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  nav .brand__nav__logo {
+    font-size: 3rem !important;
+  }
+  nav .nav__links,
+nav .btn__nav {
+    display: flex !important;
+  }
+  nav .burguer__menu {
+    display: none;
+  }
+  nav .nav__links {
+    display: flex;
+    gap: 30px;
+  }
+  nav .nav__links a {
+    font-size: 1.5rem;
+  }
+  nav .nav__links a:hover {
+    color: #a3333d;
+  }
+  nav .btn__nav {
+    background-color: #a3333d !important;
+    display: flex;
+    align-items: center;
+    border-radius: 22px;
+    gap: 10px;
+    position: relative;
+  }
+  nav .btn__nav:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #a3333d;
+    border-radius: 22px;
+    z-index: -2;
+  }
+  nav .btn__nav:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: #692127;
+    transition: all 0.3s;
+    border-radius: 22px;
+    z-index: -1;
+  }
+  nav .btn__nav:hover {
+    color: #ffffff;
+  }
+  nav .btn__nav:hover:before {
+    width: 100%;
+  }
+  nav .btn__nav span {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .header__grid__wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .header__grid__wrapper .header__lead h2 {
+    font-size: 2.8rem !important;
+  }
+  .header__grid__wrapper .header__bottom h2 {
+    font-size: 1.8rem;
+  }
+
+  .join__us__ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex__ct__modalidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__wrapper p {
+    text-align: center;
+  }
+}
 /*=============== GENERAL STYLES===============*/
 body {
   font-family: "Frank Ruhl Libre", serif;
@@ -202,13 +310,21 @@ header {
   justify-content: space-between;
   margin-bottom: 180px;
 }
-.header__ct nav :first-child {
+.header__ct nav .brand__nav__logo {
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.header__ct nav :first-child:hover {
+.header__ct nav .brand__nav__logo:hover {
   color: #a3333d;
+}
+.header__ct nav .burguer__menu {
+  font-size: 1.5rem;
+}
+.header__ct nav .nav__links,
+.header__ct nav .btn__nav {
+  display: none;
 }
 .header__ct .header__lead {
   margin-bottom: 120px;
@@ -334,6 +450,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+.modalidades__ct .flex__ct__modalidades {
+  display: flex;
+  flex-direction: column;
+}
 .modalidades__ct > * {
   color: #ffffff;
 }
@@ -412,14 +532,13 @@ footer .footer__wrapper {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 footer .footer__wrapper .grid_item {
-  width: 100%;
   gap: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 footer .footer__wrapper .grid_item h2 {
-  font-size: 0.938rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 footer .footer__wrapper .grid_item a {

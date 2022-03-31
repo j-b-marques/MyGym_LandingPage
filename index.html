@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--=============== SWIPER JS ===============-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!--=============== SCROLL REVEAL===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--=============== CSS ===============-->
@@ -24,26 +22,39 @@
     <header id="header">
         <div class="container header__ct">
             <nav>
-                <a href="#">Mygym</a>
+                <a class="brand__nav__logo" href="#">Mygym</a>
+                <div class="nav__links">
+                    <a href="#">About Us</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Schedules</a>
+                    <a href="#">Blog</a>
+                </div>
+                <button class="btn btn__nav">
+                    <span>Log in</span>
+                    <i class="fa-solid fa-user"></i>
+                </button>
                 <a href="#"><i class="fa-solid fa-bars-staggered burguer__menu"></i></a>
             </nav>
-            <div class="header__lead">
-                <h2>Start to take care of yourself</h2>
-                <div class="logos__lead">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <div class="header__grid__wrapper">
+                <div class="header__lead">
+                    <h2>Start to take care of yourself</h2>
+                    <div class="logos__lead">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <h2>Mygym Lisbon</h2>
+                    <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <span>Sunset Av, 3</span>
+                    </a>
+                    <button class="btn">start now</button>
                 </div>
             </div>
-            <div class="header__bottom">
-                <h2>Mygym Lisbon</h2>
-                <a href="#">
-                    <i class="fa-solid fa-location-pin"></i>
-                    <span>Av. Almirante Reis, 3</span>
-                </a>
-                <button class="btn">start now</button>
-            </div>
+
         </div>
 
         <div class="nav__menu__mobile">
@@ -87,7 +98,7 @@
                 <i class="fa-regular fa-comments"></i>
                 <span>What are clients say:</span>
             </div>
-  <!--           <div class="video__wrapper grid">
+            <div class="video__wrapper grid">
                 <div class="video video__1"><video controls="controls" width="100%" height="auto"
                         src="assets/img/videos/vid1.mp4">
                         <p>Your browser doesn't support embedded videos</p>
@@ -100,15 +111,18 @@
                         src="assets/img/videos/vid3.mp4">
                         <p>Your browser doesn't support embedded videos</p>
                     </video></div>
-            </div> -->
+            </div>
         </div>
     </section>
 
     <section class="section modalidades" id="modalidades">
         <div class="container modalidades__ct">
-            <h1>Acess to all the clubs in Lisbon area with one pass.</h1>
-            <span>¡Yes if you are from one you club, you are from all!</span>
-            <button class="btn">Enroll</button>
+            <div class="flex__ct__modalidades">
+                <h1>Acess to all the clubs in Lisbon area with one pass.</h1>
+                <span>¡Yes if you are from one you club, you are from all!</span>
+                <button class="btn">Enroll</button>
+            </div>
+
 
             <div class="form__wrapper">
 
@@ -129,7 +143,7 @@
 
     <footer class="section" id="footer">
         <div class="container footer__ct">
-            <div class="footer__wrapper grid">
+            <div class="footer__wrapper grid grid__ft">
                 <div class="grid_item work__with__us">
                     <h2>Work</h2>
                     <a href="#">Work with us</a>
