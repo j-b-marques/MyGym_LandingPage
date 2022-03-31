@@ -105,7 +105,7 @@ select {
 /* For large devices */
 @media screen and (min-width: 1024px) {
   header {
-    height: 60vh !important;
+    height: 80vh !important;
   }
 
   nav {
