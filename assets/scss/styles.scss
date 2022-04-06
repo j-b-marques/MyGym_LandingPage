@@ -20,7 +20,7 @@ body {
     margin-bottom: 10px;
   }
   span {
-    font-size: $fs-small;
+    font-size: $fs-normal;
     font-weight: $fw-medium;
     margin-bottom: 20px;
   }
@@ -29,6 +29,7 @@ body {
     width: fit-content;
     text-transform: uppercase;
     font-size: $fs-normal;
+    font-weight: $fw-bold;
     color: $body-color;
     background-color: $action-color;
     border-radius: 22px;
@@ -133,6 +134,7 @@ footer {
   & > *,
   a {
     color: $brand-color;
+    font-size: $fs-normal;
   }
   .footer__wrapper {
     gap: 2rem;

@@ -10,6 +10,10 @@
 
 /* For medium devices */
 @media screen and (min-width: 767px) {
+.video__wrapper {
+  grid-template-columns: repeat(3,1fr) !important;
+}
+
   form {
     .input__wrapper {
       display: grid !important;
@@ -26,9 +30,9 @@
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  header {
+  /*   header {
     height: 80vh !important;
-  }
+  } */
 
   nav {
     display: flex;
@@ -125,17 +129,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    h1 {
+      font-size: 2rem !important;
+    }
+    span {
+      font-size: 1.2rem !important;
+    }
   }
 
   .flex__ct__modalidades {
     display: flex;
     flex-direction: column;
     align-items: center;
+    h1 {
+      font-size: 2rem !important;
+    }
+    span {
+      font-size: 1.2rem !important;
+    }
   }
 
   .form__wrapper {
     p {
       text-align: center;
+      font-size: 1.1rem !important;
     }
   }
 }

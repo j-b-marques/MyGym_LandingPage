@@ -4,8 +4,9 @@ header {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #802028 0%, #000000 74%);
 }
-
 .header__ct {
   padding: 20px 25px;
 
@@ -24,10 +25,6 @@ header {
       text-decoration: none;
       font-size: $fs-big;
       font-weight: $fw-bold;
-
-      &:hover {
-        color: $action-color;
-      }
     }
 
     .burguer__menu {
@@ -42,7 +39,7 @@ header {
   }
 
   .header__lead {
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 
     h2 {
       text-transform: uppercase;
@@ -64,8 +61,11 @@ header {
   .header__bottom {
     h2 {
       text-transform: uppercase;
-      color: $action-color;
+      color: $brand-color;
       margin-bottom: 2px;
+      span {
+        color: $action-color;
+      }
     }
     a {
       display: flex;
@@ -85,7 +85,7 @@ header {
       background-color: $action-color;
       color: $body-color;
       border-radius: 22px;
-      border: none;
+      width: fit-content;
       font-size: $fs-normal;
       text-transform: uppercase;
       font-weight: $fw-bolder;
