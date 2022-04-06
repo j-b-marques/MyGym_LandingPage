@@ -38,8 +38,12 @@ body {
 //*******************
 
 .opinions__ct {
-  video {
-    border-radius: 10px;
+  .video__wrapper {
+    .video {
+      video {
+        border-radius: 10px;
+      }
+    }
   }
 }
 

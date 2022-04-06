@@ -10,9 +10,9 @@
 
 /* For medium devices */
 @media screen and (min-width: 767px) {
-.video__wrapper {
-  grid-template-columns: repeat(3,1fr) !important;
-}
+  .video__wrapper {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
 
   form {
     .input__wrapper {
@@ -30,10 +30,6 @@
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  /*   header {
-    height: 80vh !important;
-  } */
-
   nav {
     display: flex;
     align-items: center;
