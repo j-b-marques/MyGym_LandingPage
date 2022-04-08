@@ -47,6 +47,7 @@ body {
   .video__wrapper {
     place-items: center;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     .video {
       width: 153px;
       video {
