@@ -89,6 +89,11 @@ select {
     margin-right: 1rem;
   }
 }
+@media screen and (min-width: 500px) {
+  .video {
+    width: 220px !important;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 767px) {
   .video__wrapper {
@@ -108,10 +113,15 @@ select {
 }
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .video__wrapper {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between !important;
+    margin-bottom: 25% !important;
   }
   nav .brand__nav__logo {
     font-size: 3rem !important;
@@ -185,6 +195,17 @@ nav .btn__nav {
   }
   .header__grid__wrapper .header__bottom h2 {
     font-size: 1.8rem;
+  }
+
+  .img__display_1,
+.img__display_2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img__wrapper,
+.img__wrapper2 {
+    max-width: 1400px !important;
   }
 
   .join__us__ct {
@@ -301,7 +322,6 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.5rem;
 }
 
 html {
@@ -313,7 +333,7 @@ header {
   height: 100vh;
   overflow: hidden;
   background-color: #923cb5;
-  background-image: linear-gradient(147deg, #802028 0%, #000000 74%);
+  background-image: linear-gradient(147deg, #560108 0%, #000000 74%);
 }
 
 .header__ct {
@@ -434,6 +454,10 @@ body {
   font-family: "Frank Ruhl Libre", serif;
 }
 
+.img__display_1 {
+  padding-top: 0 !important;
+}
+
 .join__us__ct {
   display: flex;
   flex-direction: column;
@@ -464,6 +488,17 @@ body {
   border-radius: 22px;
 }
 
+.opinions {
+  padding-top: 0 !important;
+}
+
+.opinions__ct .video__wrapper {
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.opinions__ct .video__wrapper .video {
+  width: 153px;
+}
 .opinions__ct .video__wrapper .video video {
   border-radius: 10px;
 }

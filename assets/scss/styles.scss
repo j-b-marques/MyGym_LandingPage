@@ -7,6 +7,10 @@ body {
   font-family: $fam-font;
 }
 
+.img__display_1 {
+  padding-top: 0 !important;
+}
+
 .join__us__ct {
   & > * {
     color: $brand-color;
@@ -36,10 +40,15 @@ body {
   }
 }
 //*******************
-
+.opinions {
+  padding-top: 0 !important;
+}
 .opinions__ct {
   .video__wrapper {
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
     .video {
+      width: 153px;
       video {
         border-radius: 10px;
       }
